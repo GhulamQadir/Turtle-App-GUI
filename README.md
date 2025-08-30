@@ -1,99 +1,98 @@
 # 🐢 Turtle Drawing App (Tkinter GUI)
 
 This is a simple **Turtle-like drawing application** built with **Python** and **Tkinter**.  
-It mimics the behavior of the classic Python `turtle` module but is implemented from scratch using **Object-Oriented Programming (OOP)** concepts.  
+It mimics the behavior of the classic Python `turtle` module but is implemented **from scratch** using **Object-Oriented Programming (OOP)** concepts.
 
-You can move the turtle (a virtual pen) using **arrow keys** and draw lines on a canvas.  
+You can move the turtle (a virtual pen) using arrow keys and draw lines on a canvas.
 
 ---
 
 ## 📂 Project Structure
+
+```
 Turtle-app-GUI/
-│
-├── main.py # Entry point of the application
+│── main.py                # Entry point of the application
 │
 ├── app/
-│ └── app.py # Defines App class (main GUI logic)
+│   └── app.py             # Defines App class (main GUI logic)
 │
 ├── canvas/
-│ └── canvas.py # TkPanel class (custom tkinter.Canvas for drawing lines)
+│   └── canvas.py          # TkPanel class (custom tkinter.Canvas for drawing lines)
 │
 ├── custom_turtle/
-│ └── turtle.py # Turtle class (controls movement & uses Pen)
+│   └── turtle.py          # Turtle class (controls movement & uses Pen)
 │
 ├── geometry/
-│ ├── line/
-│ │ └── line.py # Line class (represents a line with start & end points)
-│ ├── point/
-│ │ └── point.py # Point class (represents x, y coordinates)
-│ └── pen/
-│ └── pen.py # Pen class (moves and draws lines on canvas)
-
+│   ├── line/
+│   │   └── line.py        # Line class (represents a line with start & end points)
+│   ├── point/
+│   │   └── point.py       # Point class (represents x, y coordinates)
+│   └── pen/
+│       └── pen.py         # Pen class (moves and draws lines on canvas)
+```
 
 ---
 
 ## 🚀 How to Run the Project
 
 ### 1. Clone the Repository
+[Click here to clone](https://github.com/GhulamQadir/Turtle-App-GUI.git)
+
+Or run:
 ```bash
 git clone https://github.com/GhulamQadir/Turtle-App-GUI.git
-cd Turtle-app-GUI
+cd Turtle-App-GUI
+```
 
-2. Install Python
-
-Make sure you have Python 3.8+ installed.
-Check with:
-
+### 2. Install Python
+Make sure you have **Python 3.8+** installed.  
+Check your version with:
+```bash
 python --version
+```
 
-3. Run the Application
-
-Execute the program with:
-
+### 3. Run the Application
+Execute:
+```bash
 python main.py
+```
 
-🎮 How It Works
+---
 
-The app opens a Tkinter window with a white canvas.
+## 🎮 How It Works
 
-A turtle (pen) starts at a default position.
+- The app opens a **Tkinter window** with a white canvas.
+- A turtle (pen) starts at a default position.
+- You control the turtle using **keyboard arrow keys**:
 
-You control the turtle using keyboard arrow keys:
+  - ⬆️ **Up** → Move forward (draws upward)  
+  - ⬇️ **Down** → Move backward (draws downward)  
+  - ⬅️ **Left** → Turn left  
+  - ➡️ **Right** → Turn right  
 
-⬆️ Up → Move forward (draws upward)
+- Each movement **draws a line** on the canvas.
+- A **Clear button (top-right corner)** resets the canvas.
 
-⬇️ Down → Move backward (draws downward)
+---
 
-⬅️ Left → Move left
+## 🛠 Features
 
-➡️ Right → Move right
+✅ OOP-based design (`Point`, `Line`, `Pen`, `Turtle`, `TkPanel`, `App` classes)  
+✅ Uses `@property` for clean attribute access  
+✅ Arrow-key movement & line drawing  
+✅ **Clear button** to reset canvas  
 
-Each movement draws a line on the canvas.
+---
 
-A Clear button (top-right) can reset the canvas.
+## 🔮 Future Improvements
 
-🛠 Features
+- 🎨 Add pen colors (change line color while drawing)  
+- ✏️ Add line thickness control  
+- 💾 Save canvas as an image (PNG/JPG)  
+- ↩️ Undo/Redo functionality  
 
-✅ OOP-based design (Point, Line, Pen, Turtle, TkPanel, App classes)
+---
 
-✅ Uses @property for clean attribute access
+## 👨‍💻 Author
 
-✅ Arrow-key movement & drawing
-
-✅ Clear button to erase canvas
-
-🔮 Future Improvements
-
-Add pen colors (change line color while drawing)
-
-Add line thickness control
-
-Save canvas as an image (PNG/JPG)
-
-    Undo/Redo functionality
-
-👨‍💻 Author
-
-Ghulam Qadir 
-
-
+**Ghulam Qadir**  
