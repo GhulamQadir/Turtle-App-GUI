@@ -4,7 +4,7 @@ import tkinter as tk
 class TkPanel(tk.Canvas):
     def __init__(self, master=None, h=400, w=400):
         # Initialize a Tkinter Canvas with custom height and width
-        super().__init__(master, height=h, width=h)
+        super().__init__(master, height=h, width=w)
         # Create a button widget inside the given master (window/canvas)
         self.my_button = tk.Button(
             master,
