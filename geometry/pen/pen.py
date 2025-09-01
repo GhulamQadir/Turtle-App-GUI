@@ -4,8 +4,8 @@ from geometry.line.line import Line
 
 class Pen:
     def __init__(self, canvas):
-        # The pen starts at an initial position (25, 195)
-        self.__current_pos = Point(25, 195)
+        # The pen starts at an initial position (25, 100)
+        self.__current_pos = Point(25, 100)
 
         # Canvas object (responsible for actual drawing)
         self.canvas = canvas

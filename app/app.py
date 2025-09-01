@@ -8,8 +8,12 @@ class App:
         # Create main Tkinter window
         self.window = tk.Tk()
 
+        # Validate and adjust the window size if it's too small or too large
+        # Ensures minimum and maximum bounds for both height and width
+        self.height, self.width = self.validate_window_size(height, width)
+
         # Create a custom canvas (TkPanel) to draw on
-        self.canvas = TkPanel(self.window, height, width)
+        self.canvas = TkPanel(self.window, self.height, self.width)
 
         # Display and arrange the canvas inside the main window
         self.canvas.pack()
@@ -35,6 +39,25 @@ class App:
             self.turtle.left()
         elif key == "Right":
             self.turtle.right()
+
+    def validate_window_size(self, height, width):
+        """
+        Validate and adjust the window size:
+        - Minimum allowed height = 400
+        - Maximum allowed height = 495
+        - Minimum allowed width  = 400
+        - Maximum allowed width  = 995
+        If values are outside these ranges, they are clamped (adjusted to fit).
+        """
+        if height < 400:
+            height = 400
+        elif height > 495:
+            height = 495
+        if width < 400:
+            width = 400
+        elif width > 995:
+            width = 995
+        return height, width
 
     # Start the application
     def run(self):

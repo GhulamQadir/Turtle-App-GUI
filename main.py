@@ -3,7 +3,7 @@ from app.app import App
 
 def main():
     # Create an instance of App (your Tkinter GUI application)
-    app = App()
+    app = App("Ghulam Qadir's Canvas", 406, 406)
 
     # Run the application (starts the Tkinter main event loop)
     app.run()
